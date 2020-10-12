@@ -1,0 +1,92 @@
+{
+    "name": "wessex-digital-solutions/skeleton",
+    "description": "Application starter for Symfony projects",
+    "license": "MIT",
+    "type": "project",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.5",
+        "ext-ctype": "*",
+        "ext-iconv": "*",
+        "symfony/flex": "^1.9"
+    },
+    "flex-require": {
+        "symfony/console": "*",
+        "symfony/dotenv": "*",
+        "symfony/framework-bundle": "*",
+        "symfony/yaml": "*",
+        "doctrine/doctrine-bundle": "^2.1",
+        "doctrine/doctrine-migrations-bundle": "^3.0",
+        "doctrine/orm": "^2.7",
+        "lexik/jwt-authentication-bundle": "^2.8",
+        "nelmio/cors-bundle": "^2.1",
+        "symfony/console": "5.1.*",
+        "symfony/monolog-bundle": "^3.5",
+        "symfony/phpunit-bridge": "^5.1",
+        "symfony/security-bundle": "5.1.*",
+        "symfony/serializer-pack": "^1.0"
+    },
+    "require-dev": {
+    },
+    "flex-require-dev": {
+        "symfony/debug-pack": "*",
+        "symfony/maker-bundle": "^1.0",
+        "symfony/profiler-pack": "*",
+        "symfony/test-pack": "*",
+        "doctrine/doctrine-fixtures-bundle": "*"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "replace": {
+        "paragonie/random_compat": "2.*",
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php72": "*",
+        "symfony/polyfill-php71": "*",
+        "symfony/polyfill-php70": "*",
+        "symfony/polyfill-php56": "*"
+    },
+    "scripts": {
+        "auto-scripts": [
+        ],
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ]
+    },
+    "conflict": {
+        "symfony/symfony": "*"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "5.2-dev"
+        },
+        "symfony": {
+            "allow-contrib": false,
+            "require": "5.2.*"
+        }
+    },
+    "authors": [
+        {
+            "name": "Wessex Digital Solutions",
+            "email": "contact@wessexdigitalsolutions.co.uk"
+        }
+    ]
+}
