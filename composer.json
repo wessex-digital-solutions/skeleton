@@ -3,7 +3,6 @@
     "description": "Application starter for Symfony projects",
     "license": "MIT",
     "type": "project",
-    "minimum-stability": "dev",
     "require": {
         "php": ">=7.2.5",
         "ext-ctype": "*",
