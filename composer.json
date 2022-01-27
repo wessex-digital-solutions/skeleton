@@ -7,7 +7,7 @@
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "symfony/flex": "2.0.1"
+        "symfony/flex": "2.1.4"
     },
     "flex-require": {
         "symfony/console": "*",
